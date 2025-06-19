@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+scientifc_agent/keys.json
+scientifc_agent/.env
+scientifc_agent/__pycache__/
+.ipynb_checkpoints/
+*.ipynb
+*.log
+*.sqlite3
+*.db
+.DS_Store
