@@ -49,34 +49,6 @@ python run_scientific_agent.py
 
 This will prompt you to enter a research query and then run the agent with that query.
 
-### Basic Usage in Code
-
-```python
-import asyncio
-import os
-from dotenv import load_dotenv
-
-# Set up environment variables
-os.environ["GOOGLE_API_KEY"] = "your_google_api_key"
-os.environ["CORE_API_KEY"] = "your_core_api_key"
-
-# Import after setting environment variables
-from scientifc_agent.models import CoreAPIWrapper
-from scientifc_agent.agent import app
-from scientifc_agent.utils import print_stream
-
-# Set the API key for CoreAPIWrapper
-CoreAPIWrapper.api_key = os.environ["CORE_API_KEY"]
-
-async def run_query(query):
-    result = await print_stream(app, query)
-    return result
-
-# Run the agent with a query
-query = "Find recent papers (2023-2024) about large language models for scientific research"
-asyncio.run(run_query(query))
-```
-
 ## Features
 
 - Decision making to determine if research is needed

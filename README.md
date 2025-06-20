@@ -20,16 +20,7 @@ A lightweight agent for podcast-related tasks and processing audio content.
 git clone https://github.com/MohitGoyal09/ai-agents.git
 cd ai-agents
 ```
-
-2. Set up environment variables:
-Create a `.env` file in the project root with your API keys:
-
-```
-GOOGLE_API_KEY=your_google_api_key
-CORE_API_KEY=your_core_api_key
-```
-
-3. Choose an agent to work with and follow its specific setup instructions in the agent's README.
+2. Choose an agent to work with and follow its specific setup instructions in the agent's README.
 
 ## Requirements
 
