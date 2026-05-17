@@ -73,4 +73,4 @@ Contributions are welcome. To contribute:
 
 ## License
 
-This project is licensed under the MIT License.
+License information has not yet been added to this repository.
