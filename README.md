@@ -1,16 +1,33 @@
 # AI Agents
 
-A collection of specialized AI agents for different tasks, built with modern AI frameworks.
+A curated repository of task-focused AI agents built with modern LLM orchestration frameworks.
 
-## Projects
+## Overview
 
-### [Scientific Agent](./scientifc_agent/)
+This repository currently includes:
 
-A modular scientific research agent built with LangGraph that can search for papers, analyze them, and answer research queries.
+- **[Scientific Agent](./scientifc_agent/)**  
+  A modular research assistant powered by LangGraph that can:
+  - understand research questions,
+  - search academic papers via the CORE API,
+  - analyze PDF content,
+  - produce structured, high-quality responses.
 
-### [Podcast Agent](./podcast_agent/)
+## Repository Structure
 
-A lightweight agent for podcast-related tasks and processing audio content.
+```text
+ai-agents/
+├── README.md
+└── scientifc_agent/
+    ├── agent.py
+    ├── models.py
+    ├── nodes.py
+    ├── prompts.py
+    ├── run_scientific_agent.py
+    ├── tools.py
+    ├── utils.py
+    └── requirements.txt
+```
 
 ## Getting Started
 
@@ -20,23 +37,40 @@ A lightweight agent for podcast-related tasks and processing audio content.
 git clone https://github.com/MohitGoyal09/ai-agents.git
 cd ai-agents
 ```
-2. Choose an agent to work with and follow its specific setup instructions in the agent's README.
+
+2. Install dependencies for the Scientific Agent:
+
+```bash
+pip install -r scientifc_agent/requirements.txt
+```
+
+3. Configure environment variables (for Scientific Agent):
+
+```env
+GOOGLE_API_KEY=your_google_api_key
+CORE_API_KEY=your_core_api_key
+```
+
+4. Run the Scientific Agent:
+
+```bash
+python scientifc_agent/run_scientific_agent.py
+```
 
 ## Requirements
 
 - Python 3.9+
-- Dependencies vary by agent (see individual READMEs)
+- API keys for supported model and paper search providers (see above)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome. To contribute:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit focused, well-documented changes.
+4. Open a pull request with a clear summary.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
